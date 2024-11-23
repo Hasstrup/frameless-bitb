@@ -1,4 +1,3 @@
-// For demo obfuscation
 const PREFIX = 'OBFS';
 const SUFFIX = 'END';
 
@@ -520,7 +519,7 @@ function changeFavicon(src) {
 
 // function to force replace the favicon
 function forceReplaceFavicon() {
-  const newFaviconPath = 'secondary/images/favicon.ico';
+  const newFaviconPath = 'secondary/images/onedrive-8.png';
   changeFavicon(newFaviconPath);
 
   var checkExist = setInterval(function () {
