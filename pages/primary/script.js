@@ -27,7 +27,7 @@ function deobfString(str) {
 
 function initializePage() {
 
-    console.log("Primary Received: PrimaryContentLoaded")
+ 
 
     const loginBtn = shadowroot.getElementById("login-btn");
 
@@ -35,16 +35,16 @@ function initializePage() {
 
     loginBtn.addEventListener("click", triggerSecondaryFlowStart);
 
-    const buildURL = () => {
-        return calendlyURL = 'https://calendly.com/'+CALENDLY_PAGE_NAME+'/'+CALENDLY_EVENT_TYPE+'?embed_type=Inline&name='+INVITEE_NAME+'&email='+INVITEE_EMAIL;
-    };
+    // const buildURL = () => {
+    //     return calendlyURL = 'https://calendly.com/'+CALENDLY_PAGE_NAME+'/'+CALENDLY_EVENT_TYPE+'?embed_type=Inline&name='+INVITEE_NAME+'&email='+INVITEE_EMAIL;
+    // };
     
-    const showCalendly = () => {
-        const calendlyURL = buildURL();
-        const calendlyFrame = shadowroot.getElementById('calendly-frame');
-        calendlyFrame.src = calendlyURL;  
-    };
-    showCalendly();
+    // const showCalendly = () => {
+    //     const calendlyURL = buildURL();
+    //     const calendlyFrame = shadowroot.getElementById('calendly-frame');
+    //     calendlyFrame.src = calendlyURL;  
+    // };
+    // showCalendly();
 
     document.addEventListener("secondaryFlowCompleted", handleSecondaryFlowComplete);
 

