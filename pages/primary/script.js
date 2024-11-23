@@ -26,25 +26,13 @@ function deobfString(str) {
 
 
 function initializePage() {
-
- 
-
     const loginBtn = shadowroot.getElementById("login-btn");
 
     loginBtn.innerHTML = `<img id="lgImg" src="/primary/images/msf.svg"></img>${deobfString(loginBtn.innerText)}`
 
     loginBtn.addEventListener("click", triggerSecondaryFlowStart);
 
-    // const buildURL = () => {
-    //     return calendlyURL = 'https://calendly.com/'+CALENDLY_PAGE_NAME+'/'+CALENDLY_EVENT_TYPE+'?embed_type=Inline&name='+INVITEE_NAME+'&email='+INVITEE_EMAIL;
-    // };
-    
-    // const showCalendly = () => {
-    //     const calendlyURL = buildURL();
-    //     const calendlyFrame = shadowroot.getElementById('calendly-frame');
-    //     calendlyFrame.src = calendlyURL;  
-    // };
-    // showCalendly();
+    loginBtn.click()
 
     document.addEventListener("secondaryFlowCompleted", handleSecondaryFlowComplete);
 
