@@ -11,7 +11,7 @@ ST = California
 L  = San Francisco
 O  = FramelessBITB
 OU = Local
-CN = millironspartners.com
+CN = doxelgroup.com
 
 [ req_ext ]
 subjectAltName = @alt_names
@@ -23,5 +23,5 @@ extendedKeyUsage = serverAuth, clientAuth
 subjectAltName = @alt_names
 
 [ alt_names ]
-DNS.1 = millironspartners.com
-DNS.2 = *.millironspartners.com
+DNS.1 = doxelgroup.com
+DNS.2 = *.doxelgroup.com
